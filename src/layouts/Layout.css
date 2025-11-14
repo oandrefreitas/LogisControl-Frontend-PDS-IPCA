@@ -1,0 +1,73 @@
+.gestor-page, .operador-page, .tecnico-page, .depcompras-page {
+  display: flex;
+  flex-direction: column;
+  height: 96vh;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+  
+.header {
+  background-color: #3e334e;
+  color: white;
+  padding: 0.8rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-weight: bold;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.logout-icon {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+  
+.logout-icon:hover {
+  transform: scale(1.2);
+  color: #ffbbbb;
+}
+  
+.content-wrapper {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  min-width: 0;
+}
+  
+.sidebar {
+  width: 100px;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  flex-shrink: 0;
+}
+  
+.main-content {
+  flex: 1;
+  min-width: 0;
+  padding: 1.5rem 2rem 1rem;
+  overflow-y: auto; 
+  overflow-x: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+  
+.footer {
+  background-color: #3e334e;
+  color: white;
+  text-align: center;
+  padding: 0.6rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
