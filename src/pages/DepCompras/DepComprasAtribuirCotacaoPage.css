@@ -1,0 +1,75 @@
+.cotacao-wrapper {
+  padding: 4rem 2rem 2rem;
+  background: white;
+  border-radius: 12px;
+  margin-top: 65px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cotacao-wrapper h2 {
+  color: #3e334e;
+  margin-bottom: 2rem;
+}
+
+.cotacao-wrapper h3 {
+  color: #3e334e;
+  margin: 2rem 0 1rem;
+}
+
+/* Tabela estilizada */
+.tabela-materias {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+  margin-bottom: 2rem;
+}
+
+.tabela-materias th,
+.tabela-materias td {
+  border: 1px solid #ccc;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+.tabela-materias th {
+  background-color: #f0f0f0;
+  color: #3e334e;
+}
+
+.tabela-materias td {
+  background-color: white;
+  color: #1a1a1a;
+}
+
+.tabela-materias tr:hover {
+  background-color: #f9f9f9;
+}
+
+.tabela-materias input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+/* Botões */
+.botoes-cotacao {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.botoes-cotacao .voltar,
+.botoes-cotacao .enviar {
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.botoes-cotacao button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
