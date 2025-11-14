@@ -1,0 +1,59 @@
+.criar-fornecedor-wrapper {
+    padding: 4rem 2rem 2rem;
+    background: white;
+    border-radius: 12px;
+    margin-top: 65px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    color: #1a1a1a;
+  }
+  
+  .criar-fornecedor-wrapper h2 {
+    margin-bottom: 2rem;
+    color: #3e334e;
+  }
+  
+  .formulario-criar-fornecedor {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .linha-formulario {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .linha-formulario label {
+    width: 140px;
+    text-align: left;
+    font-weight: 500;
+    color: #3e334e;
+  }
+  
+  .linha-formulario input {
+    flex: 1;
+    padding: 0.6rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #1a1a1a;
+  }
+  
+  .botoes-criar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .botoes-criar button {
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+  }
+  

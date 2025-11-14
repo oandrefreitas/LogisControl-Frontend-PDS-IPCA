@@ -1,0 +1,174 @@
+.lista-manutencao-wrapper {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  color: #1a1a1a;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+.lista-manutencao-header {
+  font-size: 1.8rem;
+  color: #3e334e;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.tabs-pedidos {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tab-texto {
+  cursor: pointer;
+  color: #333;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.tab-texto.ativo {
+  border-color: #0083b0;
+  color: #0083b0;
+}
+
+.lista-manutencao-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.lista-manutencao-tabela th,
+.lista-manutencao-tabela td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.lista-manutencao-tabela th {
+  background-color: #f4f4f4;
+  color: #3e334e;
+  font-weight: 600;
+}
+
+.linha-clara-lista-manutencao {
+  background-color: #f9f9f9;
+}
+
+.descricao-clicavel-lista-manutencao {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #0083b0;
+  font-weight: 500;
+}
+
+.modal-overlay-lista-manutencao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-lista-manutencao {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 800px;
+  max-width: 90vw;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.modal-textarea-lista-manutencao {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #3e334e;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.modal-textarea-lista-manutencao:disabled {
+  background-color: #f3f3f3;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.modal-botoes-lista-manutencao {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.modal-botoes-lista-manutencao button {
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-botoes-lista-manutencao button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Gestao-utilizadores-dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+}
+
+.Gestao-utilizadores-dropdown-role {
+  width: 130px;
+}
+
+.Gestao-utilizadores-dropdown-acao {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #333;
+  padding: 4px 20px 4px 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.Gestao-utilizadores-dropdown-acao:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.Gestao-utilizadores-dropdown-wrapper::after {
+  content: "\25BE";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 1.5rem;
+  color: #666;
+}

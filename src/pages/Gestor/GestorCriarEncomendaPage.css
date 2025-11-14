@@ -1,0 +1,121 @@
+.gestor-criar-encomenda-wrapper {
+  width: 100%;
+  height: auto;
+  padding: 4rem 2rem 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  color: #2c2c2c;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 65px;
+}
+
+.gestor-criar-encomenda-wrapper h2.gestor-criar-encomenda-titulo {
+  margin-bottom: 2rem;
+  color: #4a3f57;
+  text-align: left;
+}
+
+.gestor-criar-encomenda-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.gestor-criar-encomenda-linha {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.gestor-criar-encomenda-linha label {
+  width: 160px;
+  text-align: left;
+  font-weight: 500;
+  color: #4a3f57;
+}
+
+.gestor-criar-encomenda-linha input,
+.gestor-criar-encomenda-linha select {
+  flex: 1;
+  padding: 0.6rem;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #2c2c2c;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.gestor-criar-encomenda-botoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gestor-criar-encomenda-botoes button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tabela-itens {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.tabela-itens th,
+.tabela-itens td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.tabela-itens th {
+  background-color: #f0f0f0;
+}
+
+.tabela-itens tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+
+.gestor-criar-encomenda-botoes button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .gestor-criar-encomenda-wrapper {
+    padding: 2rem;
+    margin-top: 30px;
+  }
+
+  .gestor-criar-encomenda-linha label {
+    width: auto;
+    margin-bottom: 0.5rem;
+  }
+
+
+  
+  .gestor-criar-encomenda-botoes {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 1.5rem;
+  }
+}

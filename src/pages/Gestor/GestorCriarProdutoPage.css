@@ -1,0 +1,150 @@
+.criar-produto-wrapper {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.criar-produto-wrapper h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #3e334e;
+}
+
+.formulario-criar-produto {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.linha-formulario-criar-produto {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.linha-formulario-criar-produto label {
+  width: 180px;
+  font-weight: 500;
+  color: #2c2c2c;
+}
+
+.input-criar-produto-campo {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  font-family: inherit;
+  box-sizing: border-box;
+
+
+}
+
+.botoes-criar-produto {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.botoes-criar-produto button,
+.botao-criar-produto-adicionar {
+  margin-top: 1rem; 
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.botoes-criar-produto button:hover,
+.botao-criar-produto-adicionar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.botoes-criar-produto button,
+.botao-criar-produto-remover {
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.botoes-criar-produto button:hover,
+.botao-criar-produto-remover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.secao-materias-primas h3 {
+  color: #3e334e;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.secao-materias-primas .linha-formulario-criar-produto {
+  gap: 0.5rem;
+}
+
+.secao-materias-primas .input-criar-produto-campo {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+}
+
+.secao-materias-primas label {
+  font-size: 0.9rem;
+  width: 140px;
+}
+
+.secao-materias-primas .botao-criar-produto-remover {
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+}
+
+.secao-materias-primas .linha-formulario-criar-produto + .linha-formulario-criar-produto {
+  margin-top: 0.75rem; /* ou 1rem para mais espaço */
+}
+
+/* Torna o dropdown maior */
+.secao-materias-primas select.input-criar-produto-campo {
+  flex: 2;
+  min-width: 105px;
+}
+
+/* Torna o input de quantidade menor */
+.secao-materias-primas input[type="number"].input-criar-produto-campo {
+  flex: 1;
+  max-width: 100px;
+}
+
+/* Para Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Para Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}

@@ -1,0 +1,162 @@
+.Gestao-utilizadores-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+  
+.Gestao-utilizadores-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+  
+.Gestao-utilizadores-titulo {
+  font-size: 1.5rem;
+  color: #3e334e;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+  
+.Gestao-utilizadores-botoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.Gestao-utilizadores-botoes button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Gestao-utilizadores-botoes button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+  
+.Gestao-utilizadores-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+  
+.Gestao-utilizadores-tabela th,
+.Gestao-utilizadores-tabela td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #1a1a1a;
+}
+  
+.Gestao-utilizadores-tabela thead {
+  background-color: #e9e9ec;
+}
+  
+.Gestao-utilizadores-linha-clara {
+  background-color: #f9f9f9;
+}
+
+
+.Gestao-utilizadores-dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 150px; 
+}
+
+.Gestao-utilizadores-dropdown-role {
+  width: 130px; 
+}
+
+.Gestao-utilizadores-dropdown-estado {
+  width: 100px;
+}
+
+.Gestao-utilizadores-dropdown-acao {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #333;
+  padding: 4px 20px 4px 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Remove highlight ao focar */
+.Gestao-utilizadores-dropdown-acao:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* seta personalizada */
+.Gestao-utilizadores-dropdown-wrapper::after {
+  content: "▾";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.Gestao-utilizadores-reset-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0083b0;
+  transition: transform 0.1s ease;
+}
+
+.Gestao-utilizadores-reset-button:hover {
+  transform: scale(1.2);
+  color: #0083b0;
+}
+
+/* Botões no final da página de registos */
+.tecnico-registo-manutencao-botoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.tecnico-registo-manutencao-botao-voltar {
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none; /* Remove o sublinhado do link */
+  display: inline-block;
+}
+
+.tecnico-registo-manutencao-botao-voltar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,118 @@
+/* Estilos base (compartilhados entre ambas as páginas) */
+.pedidos-manutencao-wrapper {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  color: #1a1a1a;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+.pedidos-manutencao-header {
+  font-size: 1.8rem;
+  color: #3e334e;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.pedidos-manutencao-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.pedidos-manutencao-tabela th,
+.pedidos-manutencao-tabela td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.pedidos-manutencao-tabela th {
+  background-color: #f4f4f4;
+  color: #3e334e;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.pedidos-manutencao-tabela th[onclick] {
+  cursor: pointer;
+}
+
+.linha-clara-pedidos-manutencao {
+  background-color: #f9f9f9;
+}
+
+/* Estilos para elementos clicáveis (compartilhados) */
+.coluna-clicavel-pedidos-manutencao,
+.descricao-clicavel-pedidos-manutencao {
+  cursor: pointer;
+  color: #0083b0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.coluna-clicavel-pedidos-manutencao:hover,
+.descricao-clicavel-pedidos-manutencao:hover {
+  text-decoration: underline;
+}
+
+.descricao-texto {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Estilos para modal (compartilhados) */
+.modal-overlay-pedidos-manutencao,
+.modal-overlay-lista-compras {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-pedidos-manutencao,
+.modal-lista-compras {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 800px;
+  max-width: 90vw;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.modal-botoes,
+.modal-botoes-lista-compras {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.modal-botoes button,
+.modal-botoes-lista-compras button {
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-botoes button:hover,
+.modal-botoes-lista-compras button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

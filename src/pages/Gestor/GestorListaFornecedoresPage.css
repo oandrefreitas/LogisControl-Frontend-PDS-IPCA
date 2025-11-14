@@ -1,0 +1,52 @@
+.fornecedores-wrapper {
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 12px;
+  margin-top: 65px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+  
+.tabela-fornecedores {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+  
+.tabela-fornecedores th,
+.tabela-fornecedores td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+  color: #1a1a1a;
+}
+  
+.tabela-fornecedores th {
+  background-color: #f0f0f0;
+  color: #3e334e;
+}
+  
+.botoes-fornecedores {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 1rem; 
+  margin-top: 1.5rem;
+}  
+  
+.botoes-fornecedores .voltar,
+.botoes-fornecedores .criar {
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+  
+.botoes-fornecedores button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+  
+  

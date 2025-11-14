@@ -1,0 +1,102 @@
+.gestor-criar-ordem-producao-wrapper {
+  width: 100%;
+  height: auto;
+  padding: 4rem 2rem 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  color: #2c2c2c;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 65px;
+}
+
+.gestor-criar-ordem-producao-wrapper h2 {
+  margin-bottom: 2rem;
+  color: #4a3f57;
+  text-align: left;
+}
+
+.formulario-criar-ordem-producao {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.linha-formulario-criar-ordem-producao {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.linha-formulario-criar-ordem-producao label {
+  width: 160px;
+  text-align: left;
+  font-weight: 500;
+  color: #4a3f57;
+}
+
+.linha-formulario-criar-ordem-producao input,
+.linha-formulario-criar-ordem-producao select,
+.linha-formulario-criar-ordem-producao textarea {
+  flex: 1;
+  padding: 0.6rem;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #2c2c2c;
+}
+
+.botoes-criar-ordem-producao {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.botoes-criar-ordem-producao button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.botoes-criar-ordem-producao button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .gestor-criar-ordem-producao-wrapper {
+    padding: 2rem;
+    margin-top: 30px;
+  }
+
+  .linha-formulario-criar-ordem-producao {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .linha-formulario-criar-ordem-producao label {
+    width: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .botoes-criar-ordem-producao {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 1.5rem;
+  }
+}

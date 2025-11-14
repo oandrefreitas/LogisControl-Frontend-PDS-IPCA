@@ -1,0 +1,67 @@
+.materia-prima-wrapper {
+  width: 100%;
+  padding: 4rem 2rem 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  color: #1a1a1a;
+  margin-top: 65px;
+}
+  
+.materia-prima-wrapper h2 {
+  margin-bottom: 2rem;
+  color: #3e334e;
+}
+  
+.tabela-materia-prima {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+  
+.tabela-materia-prima th,
+.tabela-materia-prima td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+  font-size: 1rem;
+}
+  
+.tabela-materia-prima th {
+  background-color: #f0f0f0;
+  color: #3e334e;
+}
+  
+.botoes-materia {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center; /* centra os botões */
+}
+
+.botoes-materia button {
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+button.criar {
+  background: linear-gradient(to right, #00b4db, #0083b0);
+}
+
+button.receber {
+  background: linear-gradient(to right, #00b4db, #0083b0);
+}
+
+button.ver-todas {
+  background: linear-gradient(to right, #00b4db, #0083b0);
+}
+
+.botoes-materia button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

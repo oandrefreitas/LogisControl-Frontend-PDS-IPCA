@@ -1,0 +1,142 @@
+.Gestao-utilizadores-dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+}
+
+.Gestao-utilizadores-dropdown-role {
+  width: 130px;
+}
+
+.Gestao-utilizadores-dropdown-acao {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #333;
+  padding: 4px 20px 4px 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Remove highlight ao focar */
+.Gestao-utilizadores-dropdown-acao:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* seta personalizada */
+.Gestao-utilizadores-dropdown-wrapper::after {
+  content: "▾";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.descricao-clicavel-lista-compras {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #0083b0;
+  font-weight: 500;
+}
+
+/* Modal */
+.modal-overlay-lista-compras {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-lista-compras {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 800px;
+  max-width: 90vw;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.modal-lista-compras h3 {
+  margin-bottom: 1rem;
+  color: #3e334e;
+}
+
+.modal-textarea-lista-compras {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #3e334e;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.modal-textarea-lista-compras:disabled {
+  background-color: #f3f3f3;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.modal-botoes-lista-compras {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.modal-botoes-lista-compras button {
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-botoes-lista-compras button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tabs-pedidos {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tab-texto {
+  cursor: pointer;
+  color: #333;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.tab-texto.ativo {
+  border-color:  #0083b0;
+  color:  #0083b0;
+}
