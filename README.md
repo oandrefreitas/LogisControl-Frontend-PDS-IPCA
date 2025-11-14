@@ -1,6 +1,6 @@
 //******************************PORTUGUÊS******************************//
 
-# LogisControl-Frontend
+# LogisControl-Frontend - PDS-IPCA
 
 Aplicação web desenvolvida em React + Vite para a plataforma LogisControl. Oferece uma interface dinâmica e responsiva para a gestão integrada de produção, manutenção, compras, armazém e administração de utilizadores, comunicando diretamente com a API LogisControl-Backend.
 
@@ -23,7 +23,7 @@ Este frontend comunica com a API disponível no repositório **LogisControl-Back
 
 //******************************ENGLISH******************************//
 
-# LogisControl-Frontend
+# LogisControl-Frontend - PDS-IPCA
 
 Web application built with React + Vite for the LogisControl platform. Provides a dynamic interface for managing production, maintenance, procurement, warehouse operations, and user administration, fully integrated with the LogisControl-Backend API.
 
